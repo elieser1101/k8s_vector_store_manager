@@ -10,7 +10,7 @@ docker run --volume /tmp/testcontainer:/tmp/testcontainer --volume <your-local-p
 # Retrieval of Documents
 
 ```
-cd k8sgpt_vectorstore
+cd k8s_vector_store_manager
 docker build -t langchain-vdb .
 docker run --volume /tmp/testcontainer:/tmp/testcontainer --volume <your-local-path-to-k8s-doc-repo>:/tmp/website -e QUERY="what is a deployment?" langchain-vdb
 ```
